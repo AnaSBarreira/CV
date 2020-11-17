@@ -1,0 +1,174 @@
+---
+title: "Ana S. Barreira's CV"
+author: "Ana S. Barreira"
+date: "`r Sys.Date()`"
+params:
+  pdf_mode:
+    value: true
+  cache_data:
+    value: true
+output:
+  pagedown::html_resume:
+    css: ['dd_cv.css', 'resume']
+    self_contained: true
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  results='asis', 
+  echo = FALSE
+)
+
+library(magrittr) # For the pipe
+source("cv_printing_functions.r")
+
+# Read in all data and initialize a CV printer object (aca se inserta el link al google doc con nuestros datos. OJO! tiene que estar compartido con cualquiera que tenga el link)
+ CV <- create_CV_object(
+   data_location = "https://docs.google.com/spreadsheets/d/1VI8CFzJ6AniNGWEcg8GF2YAm-RvFf3Anxa90JFTNFpE",  
+   pdf_mode = params$pdf_mode
+  
+ )
+
+
+
+
+```
+
+
+```{r}
+# When in pdf export mode the little dots are unaligned, so fix that with some conditional CSS.
+if(params$pdf_mode) {
+    cat("
+<style>
+:root{
+  --decorator-outer-offset-left: -6.5px;
+}
+</style>")
+}
+```
+
+
+Aside
+================================================================================
+  
+
+![_Tersina viridis_ male](/Users/Ana/Desktop/BHL tersina viridis grande.jpg)
+
+  
+  
+
+ 
+      
+      
+Contact {#contact}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %>% print_contact_info()
+```
+
+Last updated on `r Sys.Date()`.
+
+
+
+
+Main
+================================================================================
+Ana S. Barreira {#title}  
+--------------------------------------------------------------------------------
+(she/her)
+
+
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('education')
+```
+
+
+
+Research Experience {data-icon=laptop}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('research_positions')
+```
+
+
+
+
+<!-- These breaks just force a new page so section doesnt get cut off -->
+<br>
+<br>
+<br>
+
+Teaching Experience {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+
+```{r}
+CV %<>% print_section('teaching_positions')
+```
+
+
+
+::: aside
+<br>
+<br>
+```{r}
+CV %<>% print_text_block('data_science_writing_aside')
+```
+:::
+
+
+<br>
+<br>
+
+
+
+Peer-Reviewed Publications {data-icon=book}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('academic_articles')
+```
+
+Book Chapters {data-icon=book}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('bookchapters_articles')
+```
+
+Scientific presentations from the last 2 years {data-icon=comments-o}
+--------------------------------------------------------------------------------
+                   (Total = 46)  
+
+```{r}
+CV %<>% print_section('academic_presentations')
+```
+
+Mentorship {data-icon=refresh}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('academic_mentorship')
+```
+
+Other research and field work {data-icon=binoculars}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('academic_fieldwork')
+```
+
+
+Grants & Fellowships {data-icon=money}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('academic_funding')
+```
+
