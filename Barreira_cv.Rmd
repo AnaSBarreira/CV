@@ -102,7 +102,7 @@ CV %<>% print_section('research_positions')
 <!-- These breaks just force a new page so section doesnt get cut off -->
 <br>
 <br>
-<br>
+
 
 Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
@@ -113,18 +113,24 @@ CV %<>% print_section('teaching_positions')
 ```
 
 
-
 ::: aside
+
+
+![_cyanerpes](/Users/Ana/Documents/Documents Ana/UBC Application/CV/Cyanerpes.jpg)
+
 <br>
 <br>
-```{r}
-CV %<>% print_text_block('data_science_writing_aside')
-```
+<br>
+<br>
+<br>
+<br>
+
 :::
 
+<br>
+<br>
 
-<br>
-<br>
+
 
 
 
@@ -134,6 +140,24 @@ Peer-Reviewed Publications {data-icon=book}
 ```{r}
 CV %<>% print_section('academic_articles')
 ```
+
+
+
+
+::: aside
+<br>
+<br>
+```{r}
+CV %<>% print_text_block('data_science_writing_aside')
+```
+
+<br>
+<br>
+
+![_chingolo](/Users/Ana/Documents/Documents Ana/UBC Application/CV/chingolo_bhl.jpg)
+
+:::
+
 
 Book Chapters {data-icon=book}
 --------------------------------------------------------------------------------
@@ -150,12 +174,48 @@ Scientific presentations from the last 2 years {data-icon=comments-o}
 CV %<>% print_section('academic_presentations')
 ```
 
+
+
+::: aside
+
+<br>
+<br>
+
+![_chingolo](/Users/Ana/Documents/Documents Ana/UBC Application/CV/Agraulis vanillae.jpg)
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+:::
+
+
 Mentorship {data-icon=refresh}
 --------------------------------------------------------------------------------
+
 
 ```{r}
 CV %<>% print_section('academic_mentorship')
 ```
+
+
+::: aside
+<br>
+<br>
+<br>
+<br>
+
+```{r}
+CV %<>% print_text_block('academic_mentorship_aside')
+```
+<br>
+<br>
+<br>
+
+:::
+
 
 Other research and field work {data-icon=binoculars}
 --------------------------------------------------------------------------------
