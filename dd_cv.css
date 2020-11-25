@@ -122,3 +122,13 @@ sup {
   margin: 0.5rem;
   box-shadow: 1px 1px 4px black;
 }
+
+.pagedjs_margin-top-left-corner {
+  visibility: unset !important;
+}
+.pagedjs_margin-top-left-corner>.pagedjs_margin-content::after {
+  content: counter(page);
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+}

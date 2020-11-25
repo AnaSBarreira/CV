@@ -144,20 +144,12 @@ CV %<>% print_section('academic_articles')
 
 
 
-::: aside
 <br>
 <br>
-```{r}
-CV %<>% print_text_block('data_science_writing_aside')
-```
-
 <br>
 <br>
-
-![_chingolo](/Users/Ana/Documents/Documents Ana/UBC Application/CV/chingolo_bhl.jpg)
-
-:::
-
+<br>
+<br>
 
 Book Chapters {data-icon=book}
 --------------------------------------------------------------------------------
@@ -166,6 +158,24 @@ Book Chapters {data-icon=book}
 CV %<>% print_section('bookchapters_articles')
 ```
 
+
+::: aside
+<br>
+<br>
+```{r}
+CV %<>% print_text_block('data_science_writing_aside')
+```
+<br>  
+<br>
+<br>  
+<br>
+<br>
+<br>
+<br>
+
+![_chingolo](/Users/Ana/Documents/Documents Ana/UBC Application/CV/chingolo_bhl.jpg)
+
+:::
 Scientific presentations from the last 2 years {data-icon=comments-o}
 --------------------------------------------------------------------------------
                    (Total = 46)  
@@ -178,16 +188,7 @@ CV %<>% print_section('academic_presentations')
 
 ::: aside
 
-<br>
-<br>
-
-![_chingolo](/Users/Ana/Documents/Documents Ana/UBC Application/CV/Agraulis vanillae.jpg)
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+![_Agraulis vanillae_](/Users/Ana/Documents/Documents Ana/UBC Application/CV/Agraulis vanillae.jpg)
 
 :::
 
@@ -225,10 +226,23 @@ CV %<>% print_section('academic_fieldwork')
 ```
 
 
+
 Grants & Fellowships {data-icon=money}
 --------------------------------------------------------------------------------
-
+              (Only currently active grants are listed)
 ```{r}
 CV %<>% print_section('academic_funding')
 ```
 
+
+::: aside
+<br>
+<br>
+```{r}
+CV %<>% print_text_block('academic_funding_aside')
+```
+<br>  
+<br>
+<br>  
+
+:::
