@@ -78,15 +78,12 @@ Ana S. Barreira {#title}
 --------------------------------------------------------------------------------
 (she/her)
 
-
-
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
 ```{r}
 CV %<>% print_section('education')
 ```
-
 
 
 Research Experience {data-icon=laptop}
@@ -97,12 +94,7 @@ CV %<>% print_section('research_positions')
 ```
 
 
-
-
 <!-- These breaks just force a new page so section doesnt get cut off -->
-<br>
-<br>
-
 
 Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
@@ -127,8 +119,7 @@ CV %<>% print_section('teaching_positions')
 
 :::
 
-<br>
-<br>
+
 
 
 
@@ -181,8 +172,7 @@ CV %<>% print_section('academic_mentorship')
 CV %<>% print_text_block('academic_mentorship_aside')
 ```
 <br>
-<br>
-<br>
+
 
 :::
 
@@ -194,8 +184,6 @@ Scientific presentations from the last 2 years {data-icon=comments-o}
 ```{r}
 CV %<>% print_section('academic_presentations')
 ```
-
-
 
 Other research and field work {data-icon=binoculars}
 --------------------------------------------------------------------------------
@@ -214,6 +202,7 @@ CV %<>% print_text_block('academic_funding_aside')
 ![_Agraulis vanillae_](/Users/Ana/Documents/Documents Ana/UBC Application/CV/Agraulis vanillae.jpg)
 
 :::
+
 
 Grants & Fellowships {data-icon=money}
 --------------------------------------------------------------------------------
